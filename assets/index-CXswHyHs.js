@@ -199,7 +199,7 @@ input{
 	border-radius: 50%;
 	cursor: pointer;
 	background-color: ${({$lightMode:e})=>e?"var(--Very-Light-Gray)":"var(--Very-Dark-Desaturated-Blue)"};
-	z-index: 1000;
+	z-index: 2;
 
 	&:hover {
 		border: none;
@@ -210,8 +210,8 @@ input{
 	&:checked {
 		background: url(${TS}) center center no-repeat,
 			linear-gradient(to right, var(--Sky-Blue), var(--Purple-Blue));
-		background-position: center; /* Center the SVG inside the checkbox */
-		border: none; /* Optional: Remove the border when checked */
+		background-position: center;
+		border: none;
 		background-size: 50% auto, cover;
 	}
 
