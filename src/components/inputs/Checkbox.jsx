@@ -39,7 +39,7 @@ const Input = styled.input`
 		$lightMode
 			? 'var(--Very-Light-Gray)'
 			: 'var(--Very-Dark-Desaturated-Blue)'};
-	z-index: 1000;
+	z-index: 2;
 
 	&:hover {
 		border: none;
@@ -50,8 +50,8 @@ const Input = styled.input`
 	&:checked {
 		background: url(${iconCheck}) center center no-repeat,
 			linear-gradient(to right, var(--Sky-Blue), var(--Purple-Blue));
-		background-position: center; /* Center the SVG inside the checkbox */
-		border: none; /* Optional: Remove the border when checked */
+		background-position: center;
+		border: none;
 		background-size: 50% auto, cover;
 	}
 
