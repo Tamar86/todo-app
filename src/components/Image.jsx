@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import imgDesktopDark from '../assets/bg-desktop-dark.jpg';
-import imgDesktopLight from '../assets/bg-desktop-light.jpg';
-import imgMobileDark from '../assets/bg-mobile-dark.jpg';
-import imgMobileLight from '../assets/bg-mobile-Light.jpg';
+import imgDesktopDark from '../../public/assets/bg-desktop-dark.jpg';
+import imgDesktopLight from '../../public/assets/bg-desktop-light.jpg';
+import imgMobileDark from '../../public/assets/bg-mobile-dark.jpg';
+import imgMobileLight from '../../public/assets/bg-mobile-Light.jpg';
 import { useTodo } from '../context/TodoContext';
 
 const StyledImage = styled.picture``;

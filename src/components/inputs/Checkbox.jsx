@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import iconCheck from '../../assets/icon-check.svg';
+import iconCheck from '../../../public/assets/icon-check.svg';
 import { useTodo } from '../../context/TodoContext';
 
 const InputContainer = styled.span`

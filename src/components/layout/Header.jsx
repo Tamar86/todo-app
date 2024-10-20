@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import imgSun from '../../assets/icon-sun.svg';
-import imgMoon from '../../assets/icon-moon.svg';
+import imgSun from '../../../public/assets/icon-sun.svg';
+import imgMoon from '../../../public/assets/icon-moon.svg';
 import Button from '../buttons/Button';
 import { useTodo } from '../../context/TodoContext';
 

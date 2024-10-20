@@ -3,7 +3,7 @@ import { useSortable } from '@dnd-kit/sortable';
 import { CSS } from '@dnd-kit/utilities';
 import Checkbox from '../inputs/Checkbox';
 import Button from '../buttons/Button';
-import iconCross from '../../assets/icon-cross.svg';
+import iconCross from '../../../public/assets/icon-cross.svg';
 import { useTodo } from '../../context/TodoContext';
 
 const ListItemContainer = styled.div`
