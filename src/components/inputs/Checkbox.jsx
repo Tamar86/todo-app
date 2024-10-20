@@ -48,14 +48,12 @@ const Input = styled.input`
 	}
 
 	&:checked {
-		background: url(${iconCheck}) center center no-repeat,
+		background: url('../../../public/assets/icon-check.svg') center center
+				no-repeat,
 			linear-gradient(to right, var(--Sky-Blue), var(--Purple-Blue));
 		background-position: center;
 		border: none;
 		background-size: 50% auto, cover;
-	}
-
-	&:focus {
 	}
 `;
 
