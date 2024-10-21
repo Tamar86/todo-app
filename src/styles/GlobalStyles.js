@@ -53,22 +53,6 @@ body, html {
   /* background-color: var(--Very-Dark-Blue); */
 }
 
-input{
-
-
-
-
-
-
-
-
-
-
-
-}
-
-
-
 `;
 
 export default GlobalStyles;

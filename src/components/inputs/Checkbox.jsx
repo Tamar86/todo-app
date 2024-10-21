@@ -39,7 +39,7 @@ const Input = styled.input`
 		$lightMode
 			? 'var(--Very-Light-Gray)'
 			: 'var(--Very-Dark-Desaturated-Blue)'};
-	z-index: 2;
+	z-index: 1000;
 
 	&:hover {
 		border: none;
@@ -48,12 +48,13 @@ const Input = styled.input`
 	}
 
 	&:checked {
-		background: url('../../../public/assets/icon-check.svg') center center
-				no-repeat,
+		/* background: url('/assets/icon-check.svg') center center no-repeat, */
+		/* linear-gradient(to right, var(--Sky-Blue), var(--Purple-Blue)); */
+		/* background-position: center; */
+		/* border: none; */
+		/* background-size: 50% auto, cover; */
+		background: url(${iconCheck}) no-repeat center,
 			linear-gradient(to right, var(--Sky-Blue), var(--Purple-Blue));
-		background-position: center;
-		border: none;
-		background-size: 50% auto, cover;
 	}
 `;
 
