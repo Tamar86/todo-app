@@ -53,8 +53,7 @@ const Input = styled.input`
 		/* background-position: center; */
 		/* border: none; */
 		/* background-size: 50% auto, cover; */
-		background: url(${iconCheck}) no-repeat center,
-			linear-gradient(to right, var(--Sky-Blue), var(--Purple-Blue));
+		background: linear-gradient(to right, var(--Sky-Blue), var(--Purple-Blue));
 		background-color: transparent;
 		border: none;
 	}
