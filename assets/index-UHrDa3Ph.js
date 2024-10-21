@@ -199,6 +199,8 @@ body, html {
 		/* background-size: 50% auto, cover; */
 		background: url(${TS}) no-repeat center,
 			linear-gradient(to right, var(--Sky-Blue), var(--Purple-Blue));
+		background-color: transparent;
+		border: none;
 	}
 `;function MS({$completed:e,id:t}){const{dispatch:n,lightMode:r}=It();return $.jsx(PS,{children:$.jsx(IS,{$lightMode:r,type:"checkbox",checked:e,onChange:i=>{i.stopPropagation(),n({type:"item/complete",payload:t})}})})}const OS=le.button`
 	background-color: transparent;
