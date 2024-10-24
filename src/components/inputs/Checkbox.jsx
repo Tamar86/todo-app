@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import iconCheck from '../../../public/assets/icon-check.svg';
+// import iconCheck from '../../../public/assets/icon-check.svg';
 import { useTodo } from '../../context/TodoContext';
 
 const InputContainer = styled.span`
@@ -48,7 +48,9 @@ const Input = styled.input`
 	}
 
 	&:checked {
-		background: url(${iconCheck}) center no-repeat, var(--Gradient-linear);
+		background: url('../../../public/assets/icon-check.svg') center no-repeat,
+			var(--Gradient-linear);
+		background-size: 50% auto, cover;
 		border: none;
 	}
 `;
