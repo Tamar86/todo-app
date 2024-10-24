@@ -193,7 +193,7 @@ body, html {
 	}
 
 	&:checked {
-		background-color: var(--Purple-Blue);
+		/* background-color: var(--Purple-Blue); */
 		background-image: url(${Ef});
 		background-repeat: no-repeat;
 		background-position: center;
