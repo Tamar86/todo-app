@@ -15,7 +15,7 @@ const InputContainer = styled.span`
 	border-radius: 50%;
 
 	&:hover {
-		background: linear-gradient(to right, var(--Sky-Blue), var(--Purple-Blue));
+		background: var(--Gradient-linear);
 		outline: none;
 		border: none;
 	}
@@ -48,19 +48,7 @@ const Input = styled.input`
 	}
 
 	&:checked {
-		/* background: url(${iconCheck}) center no-repeat, */
-		/* linear-gradient(to right, var(--Sky-Blue), var(--Purple-Blue)); */
-		/* background-position: center; */
-		/* border: none; */
-		/* background-size: 50% auto, cover; */
-
-		//////////
-
-		background: url(${iconCheck}) center no-repeat,
-			linear-gradient(to right, var(--Sky-Blue), var(--Purple-Blue));
-		/* background-image: url(${iconCheck}); */
-		/* background-position: center; */
-		/* background-repeat: no-repeat; */
+		background: url(${iconCheck}) center no-repeat, var(--Gradient-linear);
 		border: none;
 	}
 `;

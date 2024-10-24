@@ -21,6 +21,8 @@ const GlobalStyles = createGlobalStyle`
 /* to */
 --Purple-Blue: hsl(280, 87%, 65%);
 
+--Gradient-linear: linear-gradient(to right, var(--Sky-Blue), var(--Purple-Blue));
+
 /* Neutral */
 /* Light Theme */
 
