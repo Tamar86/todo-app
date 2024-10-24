@@ -203,7 +203,7 @@ body, html {
 		/* background-repeat: no-repeat; */
 		/* border: none; */
 	}
-`;function MS({$completed:e,id:t}){const{dispatch:n,lightMode:r}=It();return $.jsx(PS,{children:$.jsx(IS,{$lightMode:r,type:"checkbox",checked:e,onChange:i=>{i.stopPropagation(),n({type:"item/complete",payload:t})}})})}const OS=le.button`
+`;function MS({$completed:e,id:t}){const{dispatch:n,lightMode:r}=It();return $.jsx(PS,{children:$.jsx(IS,{$lightMode:r,type:"checkbox",checked:e,onChange:()=>{n({type:"item/complete",payload:t})}})})}const OS=le.button`
 	background-color: transparent;
 	cursor: pointer;
 	border: none;
