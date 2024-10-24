@@ -48,11 +48,7 @@ const Input = styled.input`
 	}
 
 	&:checked {
-		/* background-color: var(--Purple-Blue); */
-		background: url('../../../public/assets/icon-check.svg');
-		background-repeat: no-repeat;
-		background-position: center;
-		/* background: url(${iconCheck}) center no-repeat, var(--Gradient-linear); */
+		background: url(${iconCheck}) center no-repeat, var(--Gradient-linear);
 		border: none;
 	}
 `;
@@ -63,7 +59,6 @@ function Checkbox({ $completed, id }) {
 	return (
 		<InputContainer>
 			<Input
-				className='checkbox'
 				$lightMode={lightMode}
 				type='checkbox'
 				checked={$completed}
