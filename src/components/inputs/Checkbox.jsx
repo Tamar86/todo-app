@@ -49,7 +49,7 @@ const Input = styled.input`
 
 	&:checked {
 		/* background-color: var(--Purple-Blue); */
-		background-image: url(${iconCheck});
+		background-image: url('../../../public/assets/icon-check.svg');
 		background-repeat: no-repeat;
 		background-position: center;
 		/* background: url(${iconCheck}) center no-repeat, var(--Gradient-linear); */
