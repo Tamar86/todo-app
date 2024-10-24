@@ -164,7 +164,7 @@ body, html {
 	cursor: pointer;
 	width: 1.5rem;
 	height: 1.5rem;
-
+	/* z-index: -1; */
 	border-radius: 50%;
 
 	&:hover {
@@ -184,7 +184,7 @@ body, html {
 	border-radius: 50%;
 	cursor: pointer;
 	background-color: ${({$lightMode:e})=>e?"var(--Very-Light-Gray)":"var(--Very-Dark-Desaturated-Blue)"};
-	z-index: 1000;
+	/* z-index: 1; */
 
 	&:hover {
 		border: none;
@@ -193,12 +193,15 @@ body, html {
 	}
 
 	&:checked {
-		background: url('../../../public/assets/icon-check.svg') center no-repeat,
-			var(--Gradient-linear);
-		background-size: 50% auto, cover;
-		border: none;
+		&& {
+			background: url('../../../public/assets/icon-check.svg') center no-repeat,
+				var(--Gradient-linear);
+
+			background-size: 50% auto, cover;
+			border: none;
+		}
 	}
-`;function IS({$completed:e,id:t}){const{dispatch:n,lightMode:r}=It();return $.jsx(TS,{children:$.jsx(PS,{$lightMode:r,type:"checkbox",checked:e,onChange:()=>{n({type:"item/complete",payload:t})}})})}const MS=le.button`
+`;function IS({$completed:e,id:t}){const{dispatch:n,lightMode:r}=It();return $.jsx(TS,{checked:e,children:$.jsx(PS,{$lightMode:r,type:"checkbox",checked:e,onChange:()=>{n({type:"item/complete",payload:t})}})})}const MS=le.button`
 	background-color: transparent;
 	cursor: pointer;
 	border: none;
