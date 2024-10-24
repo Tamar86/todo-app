@@ -56,11 +56,12 @@ const Input = styled.input`
 
 		//////////
 
-		background: linear-gradient(to right, var(--Sky-Blue), var(--Purple-Blue));
+		background: url(${iconCheck}) center no-repeat,
+			linear-gradient(to right, var(--Sky-Blue), var(--Purple-Blue));
 		/* background-image: url(${iconCheck}); */
 		/* background-position: center; */
 		/* background-repeat: no-repeat; */
-		/* border: none; */
+		border: none;
 	}
 `;
 
