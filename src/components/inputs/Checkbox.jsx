@@ -48,7 +48,7 @@ const Input = styled.input`
 	}
 
 	&:checked {
-		background-color: var(--Purple-Blue);
+		/* background-color: var(--Purple-Blue); */
 		background-image: url(${iconCheck});
 		background-repeat: no-repeat;
 		background-position: center;
