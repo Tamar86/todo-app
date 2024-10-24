@@ -70,8 +70,7 @@ function Checkbox({ $completed, id }) {
 				$lightMode={lightMode}
 				type='checkbox'
 				checked={$completed}
-				onChange={e => {
-					e.stopPropagation();
+				onChange={() => {
 					dispatch({ type: 'item/complete', payload: id });
 				}}
 			/>
