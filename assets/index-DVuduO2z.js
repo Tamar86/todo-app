@@ -193,14 +193,10 @@ body, html {
 	}
 
 	&:checked {
-		/* background-color: var(--Purple-Blue); */
-		background: url('../../../public/assets/icon-check.svg');
-		background-repeat: no-repeat;
-		background-position: center;
-		/* background: url(${TS}) center no-repeat, var(--Gradient-linear); */
+		background: url(${TS}) center no-repeat, var(--Gradient-linear);
 		border: none;
 	}
-`;function MS({$completed:e,id:t}){const{dispatch:n,lightMode:r}=It();return $.jsx(PS,{children:$.jsx(IS,{className:"checkbox",$lightMode:r,type:"checkbox",checked:e,onChange:()=>{n({type:"item/complete",payload:t})}})})}const OS=le.button`
+`;function MS({$completed:e,id:t}){const{dispatch:n,lightMode:r}=It();return $.jsx(PS,{children:$.jsx(IS,{$lightMode:r,type:"checkbox",checked:e,onChange:()=>{n({type:"item/complete",payload:t})}})})}const OS=le.button`
 	background-color: transparent;
 	cursor: pointer;
 	border: none;
