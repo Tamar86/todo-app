@@ -48,12 +48,15 @@ const Input = styled.input`
 	}
 
 	&:checked {
-		background: url(${iconCheck}) center no-repeat,
-			linear-gradient(to right, var(--Sky-Blue), var(--Purple-Blue));
-		background-position: center;
-		border: none;
-		background-size: 50% auto, cover;
-		/* background: linear-gradient(to right, var(--Sky-Blue), var(--Purple-Blue)); */
+		/* background: url(${iconCheck}) center no-repeat, */
+		/* linear-gradient(to right, var(--Sky-Blue), var(--Purple-Blue)); */
+		/* background-position: center; */
+		/* border: none; */
+		/* background-size: 50% auto, cover; */
+
+		//////////
+
+		background: linear-gradient(to right, var(--Sky-Blue), var(--Purple-Blue));
 		/* background-image: url(${iconCheck}); */
 		/* background-position: center; */
 		/* background-repeat: no-repeat; */
