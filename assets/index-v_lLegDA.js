@@ -194,7 +194,7 @@ body, html {
 
 	&:checked {
 		/* background-color: var(--Purple-Blue); */
-		background-image: url('../../../public/assets/icon-check.svg');
+		background: url('../../../public/assets/icon-check.svg');
 		background-repeat: no-repeat;
 		background-position: center;
 		/* background: url(${TS}) center no-repeat, var(--Gradient-linear); */
