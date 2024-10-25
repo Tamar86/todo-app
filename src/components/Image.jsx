@@ -5,8 +5,6 @@ import imgMobileDark from '../../public/assets/bg-mobile-dark.jpg';
 import imgMobileLight from '../../public/assets/bg-mobile-Light.jpg';
 import { useTodo } from '../context/TodoContext';
 
-const StyledImage = styled.picture``;
-
 const StyledImg = styled.img`
 	width: 100%;
 	height: 15rem;
@@ -15,7 +13,7 @@ const StyledImg = styled.img`
 function Image() {
 	const { lightMode } = useTodo();
 	return (
-		<StyledImage>
+		<div>
 			<source
 				srcSet={!lightMode ? imgDesktopDark : imgDesktopLight}
 				media='(min-width: 768px)'
@@ -29,7 +27,7 @@ function Image() {
 				src={!lightMode ? imgDesktopDark : imgDesktopLight}
 				alt='Background image'
 			/>
-		</StyledImage>
+		</div>
 	);
 }
 

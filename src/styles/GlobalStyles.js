@@ -51,7 +51,7 @@ body, html {
   font-weight: 400;
   font-style: normal;
  
-  /* background-color: var(--Very-Dark-Blue); */
+  
 }
 
 `;
