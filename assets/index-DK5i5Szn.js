@@ -58,7 +58,7 @@ Error generating stack: `+o.message+`
 /* to */
 --Purple-Blue: hsl(280, 87%, 65%);
 
---Gradient-linear: linear-gradient(to right, var(--Sky-Blue), var(--Purple-Blue));
+--Gradient-linear: linear-gradient(var(--Sky-Blue), var(--Purple-Blue));
 
 /* Neutral */
 /* Light Theme */
@@ -184,7 +184,7 @@ body, html {
 	border-radius: 50%;
 	cursor: pointer;
 	background-color: ${({$lightMode:e})=>e?"var(--Very-Light-Gray)":"var(--Very-Dark-Desaturated-Blue)"};
-	/* z-index: 1; */
+	z-index: 1000;
 
 	&:hover {
 		border: none;
@@ -194,13 +194,14 @@ body, html {
 
 	&:checked {
 		&& {
-			background: url(${TS}) center no-repeat, var(--Gradient-linear);
+			background: no-repeat center url(${TS}),
+				content-box var(--Gradient-linear);
 
 			background-size: 50% auto, cover;
 			border: none;
 		}
 	}
-`;function MS({$completed:e,id:t}){const{dispatch:n,lightMode:r}=It();return $.jsx(PS,{checked:e,children:$.jsx(IS,{$lightMode:r,type:"checkbox",checked:e,onChange:()=>{n({type:"item/complete",payload:t})}})})}const OS=le.button`
+`;function MS({$completed:e,id:t}){const{dispatch:n,lightMode:r}=It();return $.jsx(PS,{checked:e,children:$.jsx(IS,{$lightMode:r,type:"checkbox",checked:e,onChange:()=>n({type:"item/complete",payload:t})})})}const OS=le.button`
 	background-color: transparent;
 	cursor: pointer;
 	border: none;
