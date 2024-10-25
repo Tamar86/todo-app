@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import iconCheck from '../../../public/assets/icon-check.svg';
+import iconCheck from '../../images/icon-check.svg';
 import { useTodo } from '../../context/TodoContext';
 
 const InputContainer = styled.span`
@@ -39,7 +39,7 @@ const Input = styled.input`
 		$lightMode
 			? 'var(--Very-Light-Gray)'
 			: 'var(--Very-Dark-Desaturated-Blue)'};
-	/* z-index: 1; */
+	z-index: 1000;
 
 	&:hover {
 		border: none;
@@ -49,7 +49,8 @@ const Input = styled.input`
 
 	&:checked {
 		&& {
-			background: url(${iconCheck}) center no-repeat, var(--Gradient-linear);
+			background: no-repeat center url(${iconCheck}),
+				content-box var(--Gradient-linear);
 
 			background-size: 50% auto, cover;
 			border: none;
@@ -66,9 +67,7 @@ function Checkbox({ $completed, id }) {
 				$lightMode={lightMode}
 				type='checkbox'
 				checked={$completed}
-				onChange={() => {
-					dispatch({ type: 'item/complete', payload: id });
-				}}
+				onChange={() => dispatch({ type: 'item/complete', payload: id })}
 			/>
 		</InputContainer>
 	);
