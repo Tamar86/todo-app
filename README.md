@@ -42,7 +42,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://tamar86.github.io/todo-app/)
+- Live Site URL: [Github](https://tamar86.github.io/todo-app/)
 
 ## My process
 
